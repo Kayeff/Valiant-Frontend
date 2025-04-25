@@ -6,7 +6,7 @@ export default function Industries() {
   return (
     <Section
       number="03"
-      title="Industries"
+      title="Our Industries"
       buttonText="Learn more"
       description="R.E.G.A.L. can improvise results and minimize costs wherever there is water involved."
     >

@@ -5,7 +5,7 @@ export default function REGALTech() {
   return (
     <Section
       number="02"
-      title="R.E.G.A.L"
+      title="What is R.E.G.A.L ?"
       subtitle={
         <>
           <strong>R</strong>adical <strong>E</strong>nhancement using{" "}

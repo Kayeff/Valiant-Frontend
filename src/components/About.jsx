@@ -1,9 +1,10 @@
+import Credentials from "./Credentials";
 import Section from "./Section";
 
 const aboutCred = [
-  { id: "cred1", title: "5", desc: "Number of clients" },
-  { id: "cred2", title: "100+", desc: "Installations worldwide" },
-  { id: "cred3", title: "6", desc: "Accredited Certificates" },
+  { id: "cred1", title: 5, desc: "Number of clients" },
+  { id: "cred2", title: "100", desc: "Installations worldwide" },
+  { id: "cred3", title: 6, desc: "Accredited Certificates" },
 ];
 
 export default function About() {
@@ -21,13 +22,7 @@ export default function About() {
     >
       <div className="w-[80%] grid grid-cols-3 py-4">
         {aboutCred.map((cred) => (
-          <div
-            key={cred.id}
-            className="border-r border-night/20 p-10 flex flex-col items-center gap-4 nth-[3]:border-none"
-          >
-            <h1 className="text-8xl tracking-tight">{cred.title}</h1>
-            <p className="tracking-tight">{cred.desc}</p>
-          </div>
+          <Credentials key={cred.id} cred={cred} />
         ))}
       </div>
     </Section>

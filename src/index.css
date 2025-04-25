@@ -10,3 +10,10 @@
   --color-night: #0b090a;
   --color-platinium: #e6e6e9;
 }
+
+.waterBg {
+  background: url("./assets/water.webp") no-repeat center center/cover;
+}
+.heroBg {
+  background: url("./assets/hero.webp") no-repeat center center/cover;
+}
