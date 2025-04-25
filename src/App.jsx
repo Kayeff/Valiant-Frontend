@@ -1,13 +1,15 @@
-import About from "./components/About";
-import Footer from "./components/Footer";
-import GetInTouch from "./components/GetInTouch";
+import { lazy } from "react";
+import SmoothScroll from "./components/SmoothScroll";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import Industries from "./components/Industries";
-import ProdNSolutions from "./components/ProdNSolutions";
-import REGALTech from "./components/REGALTech";
-import Showcase from "./components/Showcase";
-import SmoothScroll from "./components/SmoothScroll";
+import Footer from "./components/Footer";
+
+const About = lazy(() => import("./components/About"));
+const ProdNSolutions = lazy(() => import("./components/ProdNSolutions"));
+const Industries = lazy(() => import("./components/Industries"));
+const REGALTech = lazy(() => import("./components/REGALTech"));
+const Showcase = lazy(() => import("./components/Showcase"));
+const GetInTouch = lazy(() => import("./components/GetInTouch"));
 
 export default function App() {
   return (

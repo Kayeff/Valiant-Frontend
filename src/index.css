@@ -8,9 +8,5 @@
   --font-inter: "Inter", sans-serif;
   --color-whitesmoke: #f5f3f4;
   --color-night: #0b090a;
-  --color-penn-blue: #001f54;
-}
-
-.contactBG {
-  background: url("./assets/water-treatment.webp") no-repeat center center/cover;
+  --color-platinium: #e6e6e9;
 }

@@ -1,8 +1,13 @@
-export default function NavbarLink({ link }) {
+import { twMerge } from "tailwind-merge";
+
+export default function NavbarLink({ link, className }) {
   return (
     <li className="tracking-tight">
       <a
-        className="text-night/60 duration-300 hover:text-night"
+        className={twMerge(
+          "text-night/60 duration-300 hover:text-night",
+          className
+        )}
         href={link.href}
       >
         {link.linkText}
