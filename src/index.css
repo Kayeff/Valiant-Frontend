@@ -1,7 +1,8 @@
 @import "tailwindcss";
 @font-face {
   font-family: "Inter";
-  src: url("./fonts/inter.woff2");
+  src: url("/fonts/inter.woff2") format("woff2");
+  font-style: swap;
 }
 
 @theme {
