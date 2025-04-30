@@ -25,7 +25,10 @@ function Section({
           {subtitle && <p className="tracking-tight text-center">{subtitle}</p>}
         </div>
         {description && (
-          <p className="tracking-tighter text-center text-xl desktop:text-3xl">
+          <p
+            className="tracking-tight text-center text-xl desktop:text-4xl"
+            // style={{ wordSpacing: 1 }}
+          >
             {description}
           </p>
         )}

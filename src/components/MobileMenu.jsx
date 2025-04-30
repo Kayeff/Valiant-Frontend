@@ -35,7 +35,7 @@ export default function MobileMenu({ isVisible, closeMenu }) {
           onAnimationComplete={() => {
             if (!isVisible) setShouldRender(false);
           }}
-          className="w-full bg-white absolute top-0 left-0 z-50 text-black tablet-p:hidden"
+          className="w-full bg-whitesmoke absolute top-0 left-0 z-50 text-black tablet-p:hidden"
         >
           <MenuNav
             menuVisible={isVisible}

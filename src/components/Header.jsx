@@ -14,7 +14,7 @@ export default function Header() {
             <h1 className="tracking-tighter tablet-p:text-lg tablet-l:text-xl">
               <span className="uppercase">Valiant</span> Entech
             </h1>
-            <ul className="hidden tablet-p:flex items-center justify-center gap-6 tablet-p:gap-4 font-medium">
+            <ul className="hidden tablet-p:flex items-center justify-center gap-6 font-medium group">
               {navbar_links.map((link) => (
                 <NavbarLink key={link.id} link={link} />
               ))}
