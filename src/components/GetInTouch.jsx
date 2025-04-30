@@ -19,7 +19,7 @@ export default function GetInTouch() {
     >
       <div className="w-[90%] grid grid-cols-2 gap-5">
         <Form />
-        <div>
+        <div className="w-full flex items-center justify-center">
           <img
             className="w-full object-cover h-[50vh] rounded-2xl"
             src={water}

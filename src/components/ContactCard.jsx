@@ -4,7 +4,7 @@ export default function ContactCard({ link }) {
       <div className="w-full flex items-center justify-start">
         <div className="border border-night/20 p-1.5 w-max rounded-md group-hover:border-night duration-300">
           <img
-            className="size-7"
+            className="size-7 object-cover"
             src={link.icon}
             alt={link.id}
             loading="lazy"
@@ -19,7 +19,7 @@ export default function ContactCard({ link }) {
         <a
           href={link.href}
           target="_blank"
-          className="p-2 px-3 rounded-md border border-night/20 w-max group-hover:border-night duration-300 group-hover:bg-night group-hover:text-whitesmoke bg-night/10 text-night"
+          className="p-2 px-3 rounded-md border border-night/20 w-max hover:border-night duration-300 hover:bg-night/90 group-hover:text-whitesmoke bg-night text-whitesmoke"
         >
           <span className="tracking-tight">{link.typeID}</span>
         </a>

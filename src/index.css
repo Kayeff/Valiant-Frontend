@@ -10,6 +10,15 @@
   --color-whitesmoke: #f5f3f4;
   --color-night: #0b090a;
   --color-platinium: #e6e6e9;
+
+  --breakpoint-*: initial;
+  --breakpoint-mobile-p: 320px;
+  --breakpoint-mobile-l: 480px;
+  --breakpoint-tablet-p: 640px;
+  --breakpoint-tablet-l: 768px;
+  --breakpoint-small-laptop: 1024px;
+  --breakpoint-desktop: 1280px;
+  --breakpoint-desktop-large: 1536px;
 }
 
 .waterBg {
