@@ -20,7 +20,7 @@ export default function About() {
         Water Partnership and GIZ programs."
       buttonText="About us"
     >
-      <div className="w-[80%] grid grid-cols-3 py-4">
+      <div className="w-[80%] grid grid-cols-1 tablet-p:grid-cols-3 py-4">
         {aboutCred.map((cred) => (
           <Credentials key={cred.id} cred={cred} />
         ))}

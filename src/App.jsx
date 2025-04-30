@@ -5,9 +5,9 @@ import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 
 const About = lazy(() => import("./components/About"));
-const ProdNSolutions = lazy(() => import("./components/ProdNSolutions"));
-const Industries = lazy(() => import("./components/Industries"));
 const REGALTech = lazy(() => import("./components/REGALTech"));
+const Industries = lazy(() => import("./components/Industries"));
+const ProdNSolutions = lazy(() => import("./components/ProdNSolutions"));
 const Showcase = lazy(() => import("./components/Showcase"));
 const GetInTouch = lazy(() => import("./components/GetInTouch"));
 

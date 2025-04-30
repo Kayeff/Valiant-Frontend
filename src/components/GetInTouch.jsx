@@ -17,17 +17,17 @@ export default function GetInTouch() {
         </>
       }
     >
-      <div className="w-[90%] grid grid-cols-2 gap-5">
+      <div className="w-full small-laptop:w-[80%] grid grid-cols-1 tablet-p:grid-cols-2 gap-4">
         <Form />
-        <div className="w-full flex items-center justify-center">
+        <div className="w-full items-center justify-center flex">
           <img
-            className="w-full object-cover h-[50vh] rounded-2xl"
+            className="w-full h-full object-cover rounded-2xl"
             src={water}
             alt="waterIMg"
             loading="lazy"
           />
         </div>
-        <div className="w-full grid grid-cols-4 col-span-2 gap-5">
+        <div className="w-full grid grid-cols-1 tablet-p:grid-cols-2 desktop:grid-cols-4 tablet-p:col-span-2 gap-5">
           {contactLinks.map((link) => (
             <ContactCard key={link.id} link={link} />
           ))}

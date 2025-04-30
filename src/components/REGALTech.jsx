@@ -32,12 +32,23 @@ export default function REGALTech() {
         {threeCs.map((item) => (
           <div
             key={item.cName}
-            className="border-b border-night/20 p-4 grid grid-cols-2"
+            className="border-b border-night/20 grid grid-cols-1 gap-2 tablet-p:grid-cols-2 py-4"
           >
-            <h1 className="tracking-tight text-3xl">{item.cName}</h1>
+            <div>
+              <h1 className="tracking-tight text-3xl tablet-p:hidden">
+                {item.title} as
+              </h1>
+              <h1 className="tracking-tight text-3xl font-semibold">
+                {item.cName}
+              </h1>
+            </div>
             <div className="flex flex-col gap-1">
-              <h1 className="tracking-tight text-3xl">{item.title}</h1>
-              <p className="tracking-tight text-night/70">{item.description}</p>
+              <h1 className="tracking-tight text-3xl hidden tablet-p:block">
+                {item.title}
+              </h1>
+              <p className="tracking-tight text-night/70 text-sm tablet-p:text-base desktop:text-lg desktop-large:text-xl">
+                {item.description}
+              </p>
             </div>
           </div>
         ))}

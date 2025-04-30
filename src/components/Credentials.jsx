@@ -16,14 +16,16 @@ export default function Credentials({ cred }) {
 
   return (
     <motion.div
-      className="border-r border-night/20 p-10 flex flex-col items-center gap-4 nth-[3]:border-none"
+      className="border-b tablet-p:border-r tablet-p:border-b-0 border-night/20 p-5 tablet-p:p-10 flex flex-col items-center gap-4 nth-[3]:border-none"
       whileInView="animate"
       viewport={{ once: true, margin: "-100px" }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
     >
-      <motion.h1 className="text-8xl tracking-tight">{rounded}</motion.h1>
-      <p className="tracking-tight">{cred.desc}</p>
+      <motion.h1 className="text-5xl tracking-tight">{rounded}</motion.h1>
+      <p className="tracking-tight text-center text-sm tablet-p:text-lg">
+        {cred.desc}
+      </p>
     </motion.div>
   );
 }
