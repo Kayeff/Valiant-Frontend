@@ -14,7 +14,7 @@ const GetInTouch = lazy(() => import("./components/GetInTouch"));
 export default function App() {
   return (
     <SmoothScroll>
-      <main className="w-full min-h-[100dvh] bg-whitesmoke text-night font-inter relative flex flex-col">
+      <main className="w-full min-h-[100svh] bg-whitesmoke text-night font-inter relative flex flex-col">
         <Header />
         <div className="w-full flex flex-col gap-10">
           <Hero />

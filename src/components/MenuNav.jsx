@@ -30,10 +30,10 @@ export default function MenuNav({ menuVisible, closeMenu, onExitComplete }) {
           }}
           className="w-full min-h-screen p-3 flex flex-col items-center justify-between"
         >
-          <div className="w-full flex items-center justify-end">
+          <div className="w-full flex items-center justify-end small-laptop:p-6">
             <button
               onClick={closeMenu}
-              className="p-2 bg-night cursor-pointer text-whitesmoke text-sm"
+              className="p-2 bg-night cursor-pointer text-whitesmoke text-sm small-laptop:text-lg"
             >
               Close
             </button>
@@ -43,7 +43,7 @@ export default function MenuNav({ menuVisible, closeMenu, onExitComplete }) {
             variants={listVariants}
             initial="initial"
             animate="animate"
-            className="w-full flex flex-col gap-3 py-10"
+            className="w-full flex flex-col gap-3 py-10 small-laptop:w-[70%]"
           >
             {navbar_links.map((item) => (
               <motion.li
@@ -51,7 +51,10 @@ export default function MenuNav({ menuVisible, closeMenu, onExitComplete }) {
                 variants={itemVariants}
                 className="border-b border-night/20"
               >
-                <a className="text-4xl tracking-tighter" href={item.href}>
+                <a
+                  className="text-4xl tracking-tighter small-laptop:text-6xl"
+                  href={item.href}
+                >
                   {item.linkText}
                 </a>
               </motion.li>

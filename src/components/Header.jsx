@@ -11,17 +11,12 @@ export default function Header() {
       <header className="w-full flex items-center justify-center sticky inset-0 z-30 bg-whitesmoke">
         <div className="w-full p-3 tablet-p:p-6 desktop:px-10 flex items-center justify-center">
           <div className="flex items-center justify-between w-full">
-            <h1 className="tracking-tighter tablet-p:text-lg tablet-l:text-xl">
+            <h1 className="tracking-tighter tablet-p:text-lg tablet-l:text-xl small-laptop:text-2xl">
               <span className="uppercase">Valiant</span> Entech
             </h1>
-            <ul className="hidden tablet-p:flex items-center justify-center gap-6 font-medium group">
-              {navbar_links.map((link) => (
-                <NavbarLink key={link.id} link={link} />
-              ))}
-            </ul>
             <button
               onClick={() => setIsMenuVisible(true)}
-              className="p-2 bg-night cursor-pointer text-whitesmoke underline tablet-p:hidden text-sm"
+              className="p-2 bg-night cursor-pointer text-whitesmoke underline text-sm small-laptop:text-lg"
             >
               Menu
             </button>

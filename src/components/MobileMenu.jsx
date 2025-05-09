@@ -11,7 +11,6 @@ export default function MobileMenu({ isVisible, closeMenu }) {
       setShouldRender(true);
       setContentExited(false);
     } else {
-      // First signal the content to exit
       setContentExited(false);
     }
   }, [isVisible]);
@@ -20,11 +19,10 @@ export default function MobileMenu({ isVisible, closeMenu }) {
     <AnimatePresence mode="wait">
       {shouldRender && isVisible && (
         <motion.div
-          initial={{ height: 0 }}
-          animate={{ height: "100vh" }}
+          initial={{ y: "-100vh" }}
+          animate={{ y: "0" }}
           exit={{
-            height: 0,
-            opacity: 0,
+            y: "-100vh",
             transition: {
               duration: 0.5,
               ease: "easeInOut",
@@ -35,7 +33,7 @@ export default function MobileMenu({ isVisible, closeMenu }) {
           onAnimationComplete={() => {
             if (!isVisible) setShouldRender(false);
           }}
-          className="w-full bg-whitesmoke fixed top-0 left-0 z-50 text-black tablet-p:hidden"
+          className="w-full bg-whitesmoke fixed top-0 left-0 z-50 text-black"
         >
           <MenuNav
             menuVisible={isVisible}
