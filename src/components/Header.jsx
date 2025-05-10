@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { navbar_links } from "../navbar-links";
-import NavbarLink from "./NavbarLink";
 import MobileMenu from "./MobileMenu";
 
 export default function Header() {
